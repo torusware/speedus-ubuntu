@@ -1,5 +1,5 @@
 # Speedus-lite container
-From ubuntu:trusty
+From ubuntu:precise
 MAINTAINER Jorge Docampo <jorge.docampo@torusware.com>
 
 ENV root_home /root
