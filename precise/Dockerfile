@@ -3,8 +3,6 @@ From ubuntu:precise
 MAINTAINER Jorge Docampo <jorge.docampo@torusware.com>
 
 ENV root_home /root
-ENV svol_dir $root_home/ufsmnt
-VOLUME $svol_dir
 
 RUN apt-get -qqy update \
  && apt-get -qqy upgrade \
@@ -22,8 +20,7 @@ RUN mkdir torusware \
  && ln -s speedus-lite-b* speedus \
  && cp speedus/README.txt $root_home/
 
-WORKDIR /root
-RUN echo "alias speedus=\"LD_LIBRARY_PATH=$speedus_dir/lib LD_PRELOAD=$speedus_dir/lib/libufs.so \"" >> .bashrc
+COPY speedus /usr/bin/speedus
 
 WORKDIR $netpipe_dir
 RUN make

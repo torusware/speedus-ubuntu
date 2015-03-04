@@ -1,6 +1,6 @@
-# speedus-ubuntu
-Ubuntu image with speedus solution for high-performance communications. Check us out at [our website](http://torusware.com/).
 ![speedus logo](http://torusware.com/ingenyus/images/logowebtorus.png "Torusware Speedus")
+# Speedus Plug&Run Lite for Ubuntu
+Ubuntu image with speedus solution for high-performance communications. Check us out at [our website](http://torusware.com/).
 
 Speedus is your communications highway:
 
@@ -8,7 +8,20 @@ Speedus is your communications highway:
 - Faster applications provide businesses with higher competitive advantages while reducing their IT bill
 - 100% nonintrusive software solution which takes full advantage of the underlying hardware
 
-In this container we provide a built-in communication tests, Netpipe. Just execute:
+#Supported tags and respective `Dockerfile` link
+Each tag corresponds to the tag of the ubuntu base image:
+
+- [`trusty`](https://github.com/torusware/speedus-ubuntu/tree/master/trusty "trusty Dockerfile"), [`latest`](https://github.com/torusware/speedus-ubuntu/tree/master/trusty "latest Dockerfile")
+- [`precise`](https://github.com/torusware/speedus-ubuntu/tree/master/precise "precise Dockerfile")
+
+#Launching instructions
+In order to run a container with our image, execute:
+
+    sudo docker run -ti torusware/speedus-ubuntu
+
+This will launch a `bash` shell where you can execute whatever program you want.
+
+In this image we provide a built-in communication tests, Netpipe. Just execute:
 
     NPtcp &
     NPtcp -h localhost
