@@ -1,6 +1,6 @@
 ![speedus logo](http://torusware.com/ingenyus/images/logowebtorus.png "Torusware Speedus")
 # Speedus Plug&Run Lite for Ubuntu
-Ubuntu image with speedus solution for high-performance communications. Check us out at [our website](http://torusware.com/).
+Ubuntu image with Torusware Speedus Plug&Run Lite solution for high-performance communications. Check us out at [our website](http://torusware.com/).
 
 Speedus is your communications highway:
 
@@ -21,12 +21,12 @@ In order to run a container with our image, execute:
 
 This will launch a `bash` shell where you can execute whatever program you want.
 
-In this image we provide a built-in communication tests, Netpipe. Just execute:
+In this image we provide a built-in communication tests, [NetPIPE](http://bitspjoule.org/netpipe/). In order to obtain the baseline performance:
 
     NPtcp &
     NPtcp -h localhost
 
-For getting the baseline. To perform the test with our solution:
+Now, compare these results with the same test running with Speedus:
 
     speedus NPtcp &
     speedus NPtcp -h localhost
