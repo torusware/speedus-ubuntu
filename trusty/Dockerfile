@@ -18,7 +18,7 @@ RUN mkdir torusware \
  && unzip speedus-lite-latest-linux.zip \
  && rm speedus-lite-latest-linux.zip \
  && ln -s speedus-lite-b* speedus \
- && cp speedus/README.txt $root_home/
+ && cp speedus/doc/README.image.txt $root_home/SPEEDUS_README.txt
 
 COPY speedus /usr/bin/speedus
 
