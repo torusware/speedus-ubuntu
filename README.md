@@ -1,7 +1,7 @@
 ![speedus logo](http://dl.torusware.com/images/speedus_small.jpg "Torusware Speedus")
-![ubuntu logo](http://www.gandotech.net/wp-content/uploads/2014/06/Ubuntu.png "Ubuntu")
+![ubuntu logo](http://design.ubuntu.com/wp-content/uploads/ubuntu-orange-on-white.gif "Ubuntu")
 # Speedus Plug&Run Lite for Ubuntu
-Ubuntu image with Torusware Speedus Plug&Run Lite solution for high-performance communications. Check us out at [our website](http://torusware.com/).
+Ubuntu image with speedus solution for high-performance communications. Check us out at [our website](https://bit.ly/1MKxCuh).
 
 Speedus is your communications highway:
 
@@ -9,42 +9,49 @@ Speedus is your communications highway:
 - Faster applications provide businesses with higher competitive advantages while reducing their IT bill
 - 100% nonintrusive software solution which takes full advantage of the underlying hardware
 
-#Supported tags and respective `Dockerfile` link
+# Supported tags and respective `Dockerfile` link
 Each tag corresponds to the tag of the ubuntu base image:
 
 - [`trusty`](https://github.com/torusware/speedus-ubuntu/tree/master/trusty "trusty Dockerfile"), [`latest`](https://github.com/torusware/speedus-ubuntu/tree/master/trusty "latest Dockerfile")
 - [`precise`](https://github.com/torusware/speedus-ubuntu/tree/master/precise "precise Dockerfile")
 
-#Launching instructions
+# Launching instructions
 In order to run a container with our image, execute:
-
-    sudo docker run -ti torusware/speedus-ubuntu
+```bash
+sudo docker run -ti torusware/speedus-ubuntu
+```
 
 This will launch a `bash` shell where you can execute whatever program you want.
 
-In this image we provide a built-in communication tests, [NetPIPE](http://bitspjoule.org/netpipe/). In order to obtain the baseline performance:
+In this image we provide a built-in communication tests, Netpipe. Just execute:
+```bash
+NPtcp &
+NPtcp -h localhost
+```
 
-    NPtcp &
-    NPtcp -h localhost
-
-Now, compare these results with the same test running with Speedus:
-
-    speedus NPtcp &
-    speedus NPtcp -h localhost
+For getting the baseline. To perform the test with our solution:
+```bash
+speedus NPtcp &
+speedus NPtcp -h localhost
+```
 
 As you can see, using speedus is really easy and non-intrusive, just type `speedus` before your application:
+```bash
+speedus /path/to/the/program [parameters]
+```
 
-    speedus /path/to/the/program [parameters]
+If you need more information, you can check the README file inside the container or contact us at **info@torusware.com**
 
-If you need more information, you can check the README file inside the container or contact us at <info@torusware.com>
+# Check our other images in the Docker Hub
 
-#Check our other images in the Docker Hub
+- [Speedus Plug&Run Lite for Redis](https://registry.hub.docker.com/u/torusware/speedus-redis/)
+- [Speedus Plug&Run Lite for CentOS](https://registry.hub.docker.com/u/torusware/speedus-centos/)
+- [Speedus Plug&Run Lite for MongoDB](https://registry.hub.docker.com/u/torusware/speedus-mongo/)
+- [Speedus Plug&Run Lite for YCSB](https://registry.hub.docker.com/u/torusware/speedus-ycsb/)
 
-- [speedus-centos image](https://registry.hub.docker.com/u/torusware/speedus-centos/ "Speedus Plug&Run Lite for CentOS")
-- [speedus-redis image](https://registry.hub.docker.com/u/torusware/speedus-redis/ "Speedus Plug&Run Lite for Redis")
-- [speedus-mongo image](https://registry.hub.docker.com/u/torusware/speedus-mongo/ "Speedus Plug&Run Lite for MongoDB")
+# Example Use Cases
 
-#Example Use Case
+- [Optimizing communications between Docker containers](https://bit.ly/1IZdodU)
+- [Increasing performace of a Redis Docker container in Amazon Web Services](https://bit.ly/1KsVBJW)
+- [Increasing performace of a MongoDB Docker container in Azure](https://bit.ly/1LgUzDV)
 
-- [Optimizing communications between Docker containers](http://blog.torusware.com/2015/04/optimizing-communications-between.html "Optimizing communications between Docker containers")
-- [Increasing performace of a MongoDB Docker container in Azure](http://blog.torusware.com/2015/05/increasing-performace-of-mongodb-docker.html "Increasing performace of a MongoDB Docker container in Azure")
