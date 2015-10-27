@@ -1,6 +1,6 @@
 ![speedus logo](http://dl.torusware.com/images/speedus_small.jpg "Torusware Speedus")
 ![ubuntu logo](http://design.ubuntu.com/wp-content/uploads/ubuntu-orange-on-white.gif "Ubuntu")
-# Speedus Plug&Run Lite for Ubuntu
+# Speedus Plug&Run for Ubuntu
 Ubuntu image with speedus solution for high-performance communications. Check us out at [our website](https://bit.ly/1MKxCuh).
 
 Speedus is your communications highway:
@@ -44,10 +44,10 @@ If you need more information, you can check the README file inside the container
 
 # Check our other images in the Docker Hub
 
-- [Speedus Plug&Run Lite for Redis](https://registry.hub.docker.com/u/torusware/speedus-redis/)
-- [Speedus Plug&Run Lite for CentOS](https://registry.hub.docker.com/u/torusware/speedus-centos/)
-- [Speedus Plug&Run Lite for MongoDB](https://registry.hub.docker.com/u/torusware/speedus-mongo/)
-- [Speedus Plug&Run Lite for YCSB](https://registry.hub.docker.com/u/torusware/speedus-ycsb/)
+- [Speedus Plug&Run for Redis](https://registry.hub.docker.com/u/torusware/speedus-redis/)
+- [Speedus Plug&Run for CentOS](https://registry.hub.docker.com/u/torusware/speedus-centos/)
+- [Speedus Plug&Run for MongoDB](https://registry.hub.docker.com/u/torusware/speedus-mongo/)
+- [Speedus Plug&Run for YCSB](https://registry.hub.docker.com/u/torusware/speedus-ycsb/)
 
 # Example Use Cases
 

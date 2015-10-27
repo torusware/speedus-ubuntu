@@ -15,10 +15,10 @@ ENV netpipe_dir $speedus_dir/benchmarks/NetPIPE-C
 WORKDIR /opt
 RUN mkdir torusware \
  && cd torusware \
- && wget http://dl.torusware.com/speedus/release/speedus-lite-latest-linux.zip \
- && unzip speedus-lite-latest-linux.zip \
- && rm speedus-lite-latest-linux.zip \
- && ln -s speedus-lite-b* speedus \
+ && wget http://dl.torusware.com/speedus/release/speedus-latest-linux.zip \
+ && unzip speedus-latest-linux.zip \
+ && rm speedus-latest-linux.zip \
+ && ln -s speedus-b* speedus \
  && cp speedus/doc/README.image.txt $root_home/SPEEDUS_README.txt
 
 COPY speedus /usr/bin/speedus
