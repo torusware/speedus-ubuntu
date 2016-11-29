@@ -10,9 +10,10 @@ Speedus is your communications highway:
 - 100% nonintrusive software solution which takes full advantage of the underlying hardware
 
 # Supported tags and respective `Dockerfile` link
-Each tag corresponds to the tag of the ubuntu base image:
+Each tag corresponds to the tag of the Ubuntu base image:
 
-- [`trusty`](https://github.com/torusware/speedus-ubuntu/tree/master/trusty "trusty Dockerfile"), [`latest`](https://github.com/torusware/speedus-ubuntu/tree/master/trusty "latest Dockerfile")
+- [`xenial`](https://github.com/torusware/speedus-ubuntu/tree/master/xenial "xenial Dockerfile"), [`latest`](https://github.com/torusware/speedus-ubuntu/tree/master/xenial "latest Dockerfile")
+- [`trusty`](https://github.com/torusware/speedus-ubuntu/tree/master/trusty "trusty Dockerfile")
 - [`precise`](https://github.com/torusware/speedus-ubuntu/tree/master/precise "precise Dockerfile")
 
 # Launching instructions
@@ -23,19 +24,19 @@ sudo docker run -ti torusware/speedus-ubuntu
 
 This will launch a `bash` shell where you can execute whatever program you want.
 
-In this image we provide a built-in communication tests, Netpipe. Just execute:
+In this image we provide a built-in communication tests, Netpipe. Execute the next lines in order to obtain the baseline performance:
 ```bash
 NPtcp &
 NPtcp -h localhost
 ```
 
-For getting the baseline. To perform the test with our solution:
+To run the same test using Speedus:
 ```bash
 speedus NPtcp &
 speedus NPtcp -h localhost
 ```
 
-As you can see, using speedus is really easy and non-intrusive, just type `speedus` before your application:
+As you can see, using Speedus is really easy and non-intrusive, just type `speedus` before your application:
 ```bash
 speedus /path/to/the/program [parameters]
 ```
@@ -54,4 +55,3 @@ If you need more information, you can check the README file inside the container
 - [Optimizing communications between Docker containers](https://bit.ly/1IZdodU)
 - [Increasing performace of a Redis Docker container in Amazon Web Services](https://bit.ly/1KsVBJW)
 - [Increasing performace of a MongoDB Docker container in Azure](https://bit.ly/1KGHxNW)
-
