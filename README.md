@@ -1,5 +1,5 @@
 ![speedus logo](http://dl.torusware.com/images/speedus_small.jpg "Torusware Speedus")
-![ubuntu logo](http://design.ubuntu.com/wp-content/uploads/ubuntu-orange-on-white.gif "Ubuntu")
+![ubuntu logo](https://assets.ubuntu.com/v1/4e9b777c-ubuntu-orange-on-white.gif "Ubuntu")
 # Speedus Plug&Run for Ubuntu
 Ubuntu image with speedus solution for high-performance communications. Check us out at [our website](https://bit.ly/1MKxCuh).
 
@@ -12,7 +12,8 @@ Speedus is your communications highway:
 # Supported tags and respective `Dockerfile` link
 Each tag corresponds to the tag of the Ubuntu base image:
 
-- [`xenial`](https://github.com/torusware/speedus-ubuntu/tree/master/xenial "xenial Dockerfile"), [`latest`](https://github.com/torusware/speedus-ubuntu/tree/master/xenial "latest Dockerfile")
+- [`bionic`](https://github.com/torusware/speedus-ubuntu/tree/master/bionic "xenial Dockerfile"), [`latest`](https://github.com/torusware/speedus-ubuntu/tree/master/bionic "latest Dockerfile")
+- [`xenial`](https://github.com/torusware/speedus-ubuntu/tree/master/xenial "xenial Dockerfile")
 - [`trusty`](https://github.com/torusware/speedus-ubuntu/tree/master/trusty "trusty Dockerfile")
 - [`precise`](https://github.com/torusware/speedus-ubuntu/tree/master/precise "precise Dockerfile")
 
